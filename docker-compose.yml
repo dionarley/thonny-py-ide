@@ -1,0 +1,20 @@
+services:
+  thonny:
+    build:
+      context: .
+      args:
+        USER_UID: ${UID:-1000}
+        USER_GID: ${GID:-1000}
+    image: thonny-ide:5.0.1
+    container_name: thonny
+    environment:
+      SCREEN: ${SCREEN:-1440x900x24}
+    ports:
+      - "127.0.0.1:6080:6080"   # noVNC (browser)
+      - "127.0.0.1:5900:5900"   # VNC client
+    volumes:
+      - ./workspace:/workspace:rw
+    working_dir: /workspace
+    shm_size: "512m"
+    stdin_open: true
+    tty: true
