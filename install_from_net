@@ -1,0 +1,1 @@
+wget -qO- https://thonny.org/installer-for-linux | bash
