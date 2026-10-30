@@ -96,6 +96,16 @@ curl -fsSL https://thonny.org/installer-for-linux | grep -E "VERSION=|pip instal
 
 Depois ajuste `ARG THONNY_VERSION` e os pins no `Dockerfile` e reconstrua.
 
+# Licença
+
+- **Código** (Dockerfile, `docker/entrypoint.sh`, `run.sh`,
+  `docker-compose.yml`): [MIT](LICENSE) © 2026 Dionarley.
+- **Documentação** (`README.md` e demais textos): [CC BY 4.0](LICENSE-docs.md).
+
+A imagem agrega programas de terceiros com licenças próprias (incluindo GPL e
+LGPL, executados como processos separados). Consulte
+[`THIRD_PARTY.md`](THIRD_PARTY.md) antes de redistribuir.
+
 ## Solução de problemas
 
 - **`cannot open display`**: confirme `echo $DISPLAY` e se

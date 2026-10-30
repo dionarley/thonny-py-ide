@@ -3,6 +3,10 @@
 .dockerignore
 run.sh
 README.md
+LICENSE
+LICENSE-docs.md
+LICENSE-CC-BY-4.0.txt
+THIRD_PARTY.md
 workspace
 __pycache__
 *.pyc
